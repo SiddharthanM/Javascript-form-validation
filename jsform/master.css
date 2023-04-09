@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    }
+    body{
+    background-color: darkgoldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin:0px;
+    }
+    .container{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 20px 25px rgba(0,0,0,0.3);
+    max-width:100%;
+    overflow: hidden;
+    width:400px;
+    }
+    .header h2{
+    margin: 0;
+    text-align: center;
+    background-color:rgb(2, 0, 128);
+    border-bottom-left-radius: 10px;
+    color:white;
+    margin-bottom: 10px;
+    padding:10px 0;
+    font-size:20px;
+    box-shadow: 10px 20px 25px rgba(0,0,0,0.3);
+    }
+    .formcls{
+    padding: 0 20px;
+    }
+    .formcontrols{
+    margin-bottom:3px;
+    padding-bottom:15px;
+    position: relative;
+    }
+    .formcontrols label{
+    display: inline-block;
+    margin-bottom: 5px;
+    }
+    .formcontrols input{
+    border:2px solid grey;
+    border-radius:5px;
+    display:block;
+    width:100%;
+    padding:10px;
+    }
+    .formcontrols input:focus{
+    
+    outline:none;
+    border-color:blue;
+    box-shadow: 10px 10px 20px grey;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+    }
+    .formcontrols.success input{
+    border-color:green;
+    }
+    .formcontrols.error input{
+    border-color:red;
+    }
+    .formcontrols i{
+    visibility: hidden;
+    position: absolute;
+    top:40px;
+    right:10px;
+    }
+    .formcontrols.success i.fa-check-circle{
+    visibility:visible;
+    color:green;
+    }
+    .formcontrols.error i.fa-exclamation-circle{
+    visibility:visible;
+    color:red;
+    }
+    .formcontrols small{
+    visibility: hidden;
+    color:red;
+    position: absolute;
+    left:0;
+    bottom:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .formcontrols.error small{
+    visibility: visible;
+    }
+    button{
+    background-color:rgb(2, 0, 128);
+    padding:10px;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    border:none;
+    width:100%;
+    margin-bottom:5px;
+    margin:0;
+    }
